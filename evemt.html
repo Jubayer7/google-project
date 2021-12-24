@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google page</title> 
+</head>
+
+<body>
+    <p id="clicking-method"></p>
+
+    <button onclick="handleJustfunctionClick">Just Function</button>
+    <button onclick="document.body.style.backgroundColor='red'">Red button</button>
+    <button onclick="document.body.style.backgroundColor='yellow'">Yellow button</button>
+
+    <button onclick="makeRed()"> Make Red</button>
+    <button onclick="makeYellow()">Make Me Yellow</button>
+<button id="make-black">Click Me</button>
+
+<button id="make-goldenrod">Click Me:</button>
+
+
+
+
+
+
+
+
+
+
+    <script>
+function handleJustfunctionClick(){
+    const p = document.getElementById('clicking-method')
+    p.innerText='set by using function'
+}
+function makeRed(){
+    document.body.style.backgroundColor='red'
+}
+function makeYellow(){
+document.body.style.backgroundColor='yellow'
+}
+
+const blackButton= document.getElementById('make-black')
+
+blackButton.onclick= black;
+
+function black(){
+    document.body.style.backgroundColor='black'
+}
+
+
+const goldenButton = document.getElementById('make-goldenrod')
+
+goldenButton.addEventListener= ('click', makeGolden)
+
+function makeGolden(){
+    document.body.style.backgroundColor='red'
+}
+
+    </script>
+
+<script src="event.js">
+
+</script>
+</body>
+
+</html>

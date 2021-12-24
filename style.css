@@ -26,19 +26,27 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: goldenrod;
 }
 
-.input input {
+.search-box {
   width: 700px;
   height: 40px;
   border-radius: 20px;
   border: 1px solid #ccc;
-  /* position: relative; */
+  position: relative;
 }
-
-.icon img {
-  /* position: absolute; */
+.search-box input {
+  width: 700px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+.icon {
+  position: absolute;
   top: 0;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
